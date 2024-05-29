@@ -1,0 +1,80 @@
+columns:
+  - age: category
+  - sex: category
+  - on_thyroxine: category
+  - query_on_thyroxine: category
+  - on_antithyroid_medication: category
+  - sick: category
+  - pregnant: category
+  - thyroid_surgery: category
+  - I131_treatment: category
+  - query_hypothyroid: category
+  - query_hyperthyroid: category
+  - lithium: category
+  - goitre: category
+  - tumor: category
+  - hypopituitary: category
+  - psych: category
+  - TSH_measured: category
+  - TSH: category
+  - T3_measured: category
+  - T3: category
+  - TT4_measured: category
+  - TT4: category
+  - T4U_measured: category
+  - T4U: category
+  - FTI_measured: category
+  - FTI: category
+  - TBG_measured: category
+  - TBG: category
+  - referral_source: category
+  - Class: category
+
+drop_columns:
+  - TBG
+  - TSH_measured
+  - T3_measured
+  - TT4_measured
+  - T4U_measured
+  - FTI_measured
+  - TBG_measured
+  - referral_source
+
+numerical_columns: []
+
+categorical_columns:
+  - age
+  - sex
+  - on_thyroxine
+  - query_on_thyroxine
+  - on_antithyroid_medication
+  - sick
+  - pregnant
+  - thyroid_surgery
+  - I131_treatment
+  - query_hypothyroid
+  - query_hyperthyroid
+  - lithium
+  - goitre
+  - tumor
+  - hypopituitary
+  - psych
+  - TSH
+  - T3
+  - TT4
+  - T4U
+  - FTI
+  - Class
+
+# for data transformation
+num_features: []
+
+oh_columns: []
+
+transform_columns:
+  - age
+  - TSH
+  - T3
+  - TT4
+  - T4U
+  - FTI

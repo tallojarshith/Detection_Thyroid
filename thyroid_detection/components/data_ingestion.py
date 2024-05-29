@@ -66,7 +66,7 @@ class DataIngestion:
 
             logging.info("Exported train and test file paths.")
         except Exception as e:
-            raise ThyroidException(e, sys) from e
+            raise ThyroidException(e, sys) 
 
     def initiate_data_ingestion(self) -> DataIngestionArtifact:
         """
