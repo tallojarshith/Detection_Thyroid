@@ -7,11 +7,13 @@ seaborn
 scipy
 scikit-learn
 imblearn
+flask
 xgboost
 catboost
 pymongo
 from_root
 evidently==0.2.8
+flask_cors==4.0.1
 dill
 PyYAML
 neuro_mf
