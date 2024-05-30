@@ -127,16 +127,12 @@ class DataTransformation:
                 file_path=self.data_transformation_config.transformed_object_file_path,
                 obj=transformation_pipeline,
             )
-            main_utils.save_object(
-                file_path=self.data_transformation_config.data_transformation_dir,
-                obj=label_encoder,
-            )
+            
 
             data_transformation_artifact = artifact_entity.DataTransformationArtifact(
-                transform_object_path=self.data_transformation_config.transformed_object_file_path,
-                transformed_train_path=self.data_transformation_config.transformed_train_file_path,
-                transformed_test_path=self.data_transformation_config.transformed_test_file_path,
-                target_encoder_path=self.data_transformation_config.data_transformation_dir,
+                transformed_object_file_path=self.data_transformation_config.transformed_object_file_path,
+                transformed_train_file_path=self.data_transformation_config.transformed_train_file_path,
+                transformed_test_file_path=self.data_transformation_config.transformed_test_file_path
             )
 
             logging.info(f"Data transformation artifact: {data_transformation_artifact}")
