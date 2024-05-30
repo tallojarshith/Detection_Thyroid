@@ -40,10 +40,15 @@ drop_columns:
   - TBG_measured
   - referral_source
 
-numerical_columns: []
+numerical_columns:
+  - age
+  - TSH
+  - T3
+  - TT4
+  - T4U
+  - FTI
 
 categorical_columns:
-  - age
   - sex
   - on_thyroxine
   - query_on_thyroxine
@@ -59,19 +64,38 @@ categorical_columns:
   - tumor
   - hypopituitary
   - psych
+  - Class
+
+# for data transformation
+num_features: 
+  - age
   - TSH
   - T3
   - TT4
   - T4U
   - FTI
+
+oh_columns: 
+  - sex
+  - on_thyroxine
+  - query_on_thyroxine
+  - on_antithyroid_medication
+  - sick
+  - pregnant
+  - thyroid_surgery
+  - I131_treatment
+  - query_hypothyroid
+  - query_hyperthyroid
+  - lithium
+  - goitre
+  - tumor
+  - hypopituitary
+  - psych
   - Class
 
-# for data transformation
-num_features: []
 
-oh_columns: []
 
-transform_columns:
+transform_columns: 
   - age
   - TSH
   - T3
