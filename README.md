@@ -48,6 +48,8 @@ Link:https://archive.ics.uci.edu/ml/datasets/thyroid+disease
 - Hyper parameter tuning was performed using RandomizedSearchCV
 - Model performance evaluated based on accuracy, confusion matrix, classification report.
 
+![continuous integration and deployment](C:\Users\Harshith\Videos\Captures\continuous integration and deployment · tallojarshith_Detection_Thyroid@29746f4 and 13 more pages - Personal - Microsoft​ Edge 2024-05-30 22-35-57.mp4)
+
 
 ## Database Connection
 Cassandra database used for this project.
